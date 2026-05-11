@@ -53,7 +53,7 @@ This repo deliberately diverges from the template:
 
 ## Prerequisites
 
-- Node 20+
+- Node 22+
 - JDK 17
 - Android SDK with API 36 platform + build-tools 36.0.0 + NDK 27.1.12297006
 - An Android emulator (Pixel API 34+) or device
@@ -61,9 +61,9 @@ This repo deliberately diverges from the template:
 ## Run
 
 ```sh
-npm install
-npm start                # in one terminal — Metro
-npm run android          # in another — installs + launches on the emulator/device
+pnpm install
+pnpm start                # in one terminal — Metro
+pnpm run android          # in another — installs + launches on the emulator/device
 ```
 
 ## Observe the bug
@@ -86,8 +86,8 @@ at `patches/react-native-screens+4.24.0.patch`. To try it:
 
 ```sh
 git checkout proposed-fix
-npm install              # postinstall runs patch-package automatically
-npm run android
+pnpm install              # postinstall runs patch-package automatically
+pnpm run android
 ```
 
 Diff between the two branches:
